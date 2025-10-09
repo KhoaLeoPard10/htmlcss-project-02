@@ -79,7 +79,7 @@ a {
     word-break: break-all;
 }
 
-/* ====== Header =====*/
+/* Header */
 .header {
     background: #fffcf4;
 }
@@ -137,10 +137,9 @@ a {
     margin-left: 49px;
 }
 
-/* ====== Hero ====== */
+/* Hero */
 .hero {
     padding: 56px 0 65px;
-    padding-top: 56px;
     background: #fffcf4;
 }
 
@@ -165,7 +164,7 @@ a {
 
 .hero-summary {
     position: absolute;
-    right: 0px;
+    right: 0;
     bottom: 48px;
     width: 270px;
     padding: 24px;
@@ -284,7 +283,7 @@ a {
     color: #171100;
 }
 
-/* ====== Popular ====== */
+/* Popular */
 .popular {
     padding: 65px 0;
     margin-top: 135px;
@@ -304,7 +303,7 @@ a {
     color: #5f5b53;
 }
 
-.popular-top .control {
+.popular-top .controls {
     display: flex;
     gap: 18px;
 }
@@ -322,12 +321,11 @@ a {
 }
 
 .popular-top .control-btn:hover {
-    color: #ffffff;
-    background-color: var(--primary-color);
+    color: #fff;
+    background: var(--primary-color);
     cursor: pointer;
 }
 
-/* Course list in Popular */
 .popular .course-list {
     display: flex;
     gap: 30px;
@@ -336,7 +334,7 @@ a {
 
 .popular .course-item {
     flex: 1;
-    background-color: #ffffff;
+    background: #ffffff;
     border: 1px solid #e2dfda;
     border-radius: 12px;
 }
@@ -348,19 +346,19 @@ a {
 
 .popular .course-item .thumb {
     width: calc(100% + 2px);
-    height: 230px;
+    height: 278px;
     margin: -1px;
     object-fit: cover;
-    border-radius: 12px 12px 0 0;
+    border-radius: 12px 12px 0px 0px;
 }
 
 .popular .course-item .info {
     padding: 16px 22px 22px;
 }
 
-.popular .course-item .head,
 .popular .course-item .rating,
-.popular .course-item .foot {
+.popular .course-item .foot,
+.popular .course-item .head {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -404,11 +402,11 @@ a {
 }
 
 .popular .course-item .book-btn:hover {
-    color: #ffffff;
+    color: #fff;
     background: var(--primary-color);
 }
 
-/* ====== Feedback ====== */
+/* Feedback */
 .feedback {
     margin-top: 135px;
     padding: 96px 0;
@@ -443,8 +441,8 @@ a {
 }
 
 .feedback-item .info .desc {
+    margin-top: 4px;
     font-size: 1.4rem;
-    font-weight: 400;
     line-height: 1.86;
     color: #bfbcb3;
 }
@@ -476,13 +474,12 @@ a {
 .feedback-item blockquote {
     margin-left: 30px;
     font-style: italic;
-    font-weight: 400;
     font-size: 2.6rem;
     line-height: 1.54;
     color: #ffffff;
 }
 
-/* ====== Features ====== */
+/* Features */
 .features {
     margin-top: 135px;
     padding: 65px 0;
@@ -505,7 +502,7 @@ a {
     object-fit: cover;
 }
 
-.features .images .lower {
+.features img.lower {
     margin-top: 34px;
 }
 
@@ -527,7 +524,7 @@ a {
 .features .content .cta-btn {
     margin-top: 32px;
     min-width: 137px;
-    color: #ffffff;
+    color: #fff;
     background: var(--primary-color);
 }
 
@@ -548,11 +545,11 @@ a {
     height: 440px;
 }
 
-/* ====== Blog ====== */
+/* Blog */
 .blog {
     margin-top: 135px;
     padding: 96px 0;
-    background-color: #fffcf4;
+    background: #fffcf4;
 }
 
 .blog .blog-top {
@@ -571,6 +568,7 @@ a {
     display: flex;
     gap: 30px;
     margin-top: 55px;
+    overflow: hidden;
 }
 
 .blog .item {
@@ -662,4 +660,80 @@ a {
 .blog .dot.active {
     cursor: default;
     background: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+    padding: 96px 135px 0;
+    background: #2e2100;
+}
+
+.footer .row {
+    display: flex;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #59554b;
+}
+
+.footer .row .column {
+    width: 21.6%;
+}
+
+.footer .row .column:first-child {
+    width: 35%;
+}
+
+.footer .desc {
+    margin-top: 18px;
+    max-width: 267px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb2;
+}
+
+.footer .socials {
+    display: flex;
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.footer .title {
+    display: inline-block;
+    padding: 0 48px 14px 0;
+    border-bottom: 1px solid #59554b;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #ffffff;
+}
+
+.footer .list {
+    margin-top: 28px;
+}
+
+.footer .list a {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb2;
+}
+
+.footer .list li:last-child a {
+    margin-bottom: 0;
+}
+
+.footer .list strong {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.footer .copyright {
+    padding: 28px 0;
+}
+
+.footer .copyright p {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    text-align: center;
+    color: #807d74;
 }
